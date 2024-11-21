@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقارنة بين التحليل الأساسي والفني</title>
+    <link rel="icon" href="images/3 - Copy.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+            direction: rtl; /* لجعل النصوص تبدأ من اليمين */
+        }
+        h1 {
+            text-align: center;
+            color: #ff6161;
+        }
+        .table-container {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .highlight {
+            background-color: #fffae6;
+            font-weight: bold;
+        }
+        .toggle-highlight {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .toggle-highlight:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>مقارنة بين التحليل الأساسي والتحليل الفني</h1>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>الجانب</th>
+                <th>التحليل الأساسي</th>
+                <th>التحليل الفني</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>التعريف</td>
+                <td>يركز على القيمة الجوهرية للأصول من خلال تحليل القوائم المالية والظروف الاقتصادية واتجاهات الصناعة.</td>
+                <td>يعتمد على أنماط الرسوم البيانية، الاتجاهات، وحركة الأسعار التاريخية للتنبؤ بالسلوك المستقبلي.</td>
+            </tr>
+            <tr>
+                <td>أفق الاستثمار</td>
+                <td>يُستخدم بشكل رئيسي للاستثمارات طويلة الأجل.</td>
+                <td>يُستخدم عادةً للتداول قصير ومتوسط الأجل.</td>
+            </tr>
+            <tr>
+                <td>الأدوات</td>
+                <td>تقارير مالية، مؤشرات اقتصادية، وأخبار.</td>
+                <td>رسوم بيانية، مؤشرات مثل RSI، والمتوسطات المتحركة.</td>
+            </tr>
+            <tr>
+                <td>التركيز</td>
+                <td>أساسيات الشركة مثل الأرباح، النمو، والتقييم.</td>
+                <td>حركة الأسعار، الحجم، والاتجاهات السوقية.</td>
+            </tr>
+            <tr class="highlight">
+                <td>المستخدمون الرئيسيون</td>
+                <td>المستثمرون الذين يبحثون عن القيمة والنمو طويل الأجل.</td>
+                <td>المتداولون الذين يهدفون إلى الربح من تقلبات الأسعار.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button class="toggle-highlight">تبديل التمييز</button>
+
+<script>
+    const toggleButton = document.querySelector('.toggle-highlight');
+    const highlightedRow = document.querySelector('.highlight');
+
+    toggleButton.addEventListener('click', () => {
+        highlightedRow.classList.toggle('highlight');
+    });
+</script>
+
+</body>
+</html>

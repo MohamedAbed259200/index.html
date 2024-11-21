@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+.content .commodities{
+    color: rgb(247, 247, 186); 
+}
+.content .commodities-1{
+    font-size: 19px;
+    color: snow; 
+}
+.commodities-1{
+    font-size: 19px;
+    color: snow;
+}
+.risks{
+    color: white;
+}
+.tablee{
+    font-size: 23px;
+    color: #ff6161;
+    cursor: pointer;
+}
+.tablee:hover{
+    color: rgb(247, 247, 186); 
+}
